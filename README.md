@@ -166,3 +166,12 @@ POST /settaxobject
 * Database Name > **shopee_tes_db**
 
 ![Table Structure](https://s3-ap-southeast-1.amazonaws.com/hitoriaf-public/images/DB+SHP.jpg)
+
+| field  | description   |
+|---|---|
+| ID  | ID of product  |
+|  ITEM_NAME | Name of Product  |
+| ITEM_TAX_CODE  | Tax Codes , 1=food , 2=tobacco , 3=movie  |
+| ITEM_PRICE  | Product Price  |
+| CREATED_ON  | Table Row Created Date |
+| UPDATED_ON |  Table Row Updated Date  |
