@@ -1,0 +1,22 @@
+version: "3"
+services: 
+  api:
+    environment:
+      - IS_PROD=1
+    container_name: shopee-be
+    restart: always
+    build: .
+    ports:
+      - '3000:3000'
+  mysql:
+    container_name: shopee-db
+    image: mysql
+    ports:
+      - '33060:3306'
+    command: --default-authentication-plugin=mysql_native_password
+    command: mysqld --init-file="/tmp/database/init.sql"
+    restart: always
+    volumes:
+      - ./sql:/tmp/database
+    environment:
+      MYSQL_ROOT_PASSWORD: secret

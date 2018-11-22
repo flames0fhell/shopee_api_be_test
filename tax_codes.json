@@ -1,0 +1,14 @@
+{
+    "1" : {
+        "name" : "food",
+        "refundability" : "YES"
+    },
+    "2" : {
+        "name" : "tobacco",
+        "refundability" : "NO"
+    },
+    "3" : {
+        "name" : "entertainment",
+        "refundability" : "NO"
+    }
+}
