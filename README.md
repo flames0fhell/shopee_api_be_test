@@ -2,7 +2,7 @@
 
 ## Installation
 ```sh
-$ docker-compose up
+$ docker-compose up --build
 ```
 ## EndPoints
 **API URL :**
