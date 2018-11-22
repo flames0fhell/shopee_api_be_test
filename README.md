@@ -161,3 +161,8 @@ POST /settaxobject
 }
 ```
 
+## Database Structure
+
+* Database Name > **shopee_tes_db**
+
+![Table Structure](https://s3-ap-southeast-1.amazonaws.com/hitoriaf-public/images/DB+SHP.jpg)
