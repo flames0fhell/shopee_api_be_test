@@ -1,22 +1,21 @@
 version: "3"
 services: 
-  api:
+  app:
     environment:
       - IS_PROD=1
-    container_name: shopee-be
+    container_name: shopee-backend
     restart: always
     build: .
     ports:
       - '3000:3000'
-  mysql:
-    container_name: shopee-db
-    image: mysql
+  mysql56:
+    container_name: shopee-mysql
+    image: mysql:5.6
     ports:
       - '33060:3306'
     command: --default-authentication-plugin=mysql_native_password
-    command: mysqld --init-file="/tmp/database/init.sql"
     restart: always
     volumes:
-      - ./sql:/tmp/database
+      - ./sql:/docker-entrypoint-initdb.d
     environment:
       MYSQL_ROOT_PASSWORD: secret
